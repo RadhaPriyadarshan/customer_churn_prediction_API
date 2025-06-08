@@ -33,6 +33,7 @@ app = Flask(__name__)
 CORS(app)
 
 # ========== Load Model and Assets ==========
+torch.serialization.add_safe_globals({'ChurnMLP': ChurnMLP})
 model = torch.load("customer_churn_model.pt", map_location=torch.device("cpu"))
 model.eval()
 
