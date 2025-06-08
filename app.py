@@ -5,7 +5,7 @@ import torch.nn as nn
 import pandas as pd
 import numpy as np
 import os
-import joblib  
+import joblib
 
 # ========== Define the Model ==========
 class ChurnMLP(nn.Module):
@@ -33,12 +33,12 @@ app = Flask(__name__)
 CORS(app)
 
 # ========== Load Model and Assets ==========
-torch.serialization.add_safe_globals({'ChurnMLP': ChurnMLP})
-model = torch.load("customer_churn_model.pt", map_location=torch.device("cpu"))
-model.eval()
-
 expected_columns = np.load("model_features.npy", allow_pickle=True)
-scaler = joblib.load("scaler.pkl")  # load trained StandardScaler
+scaler = joblib.load("scaler.pkl")
+
+model = ChurnMLP(in_features=len(expected_columns))
+model.load_state_dict(torch.load("customer_churn_model_v1.pt", map_location=torch.device("cpu"),weights_only=True))
+model.eval()
 
 # ========== Reason Generator ==========
 def generate_reasons(row):
@@ -94,9 +94,9 @@ def predict():
                 df[col] = 0
         df = df[expected_columns]
 
-        # Apply saved StandardScaler (trained on: tenure, MonthlyCharges, TotalCharges)
+        # Scale numeric columns
         scale_cols = ['tenure', 'MonthlyCharges', 'TotalCharges']
-        df[scale_cols] = scaler.transform(df[scale_cols])  
+        df[scale_cols] = scaler.transform(df[scale_cols])
 
         # Convert to tensor
         df = df.astype("float32")

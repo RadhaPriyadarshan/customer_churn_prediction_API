@@ -1,11 +1,11 @@
 customerID,Churn,Probability,Reason
-CUST00001,No,15.96%,"Unstable contract, High monthly charges"
-CUST00002,Yes,68.13%,"Short tenure, Unstable contract, High-risk payment method"
-CUST00003,No,7.10%,High monthly charges
-CUST00004,No,2.68%,No strong churn indicators
-CUST00005,No,4.82%,High monthly charges
-CUST00006,No,27.83%,"Unstable contract, High monthly charges"
-CUST00007,No,15.20%,"Unstable contract, High-risk payment method, High monthly charges"
-CUST00008,No,5.07%,Unstable contract
-CUST00009,No,13.96%,High monthly charges
-CUST00010,No,3.39%,No strong churn indicators
+CUST00001,No,8.83%,"Unstable contract, High monthly charges"
+CUST00002,Yes,71.41%,"Short tenure, Unstable contract, High-risk payment method"
+CUST00003,No,8.71%,High monthly charges
+CUST00004,No,3.97%,No strong churn indicators
+CUST00005,No,8.56%,High monthly charges
+CUST00006,No,20.45%,"Unstable contract, High monthly charges"
+CUST00007,No,22.40%,"Unstable contract, High-risk payment method, High monthly charges"
+CUST00008,No,6.60%,Unstable contract
+CUST00009,No,6.97%,High monthly charges
+CUST00010,No,2.33%,No strong churn indicators
