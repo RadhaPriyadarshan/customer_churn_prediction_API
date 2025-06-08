@@ -1,0 +1,11 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges
+CUST00001,Male,0,No,Yes,29,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Mailed check,90.21,2616.09
+CUST00002,Female,0,No,No,1,Yes,Yes,Fiber optic,No,No,Yes,Yes,No,Yes,Month-to-month,No,Electronic check,54.33,54.33
+CUST00003,Female,1,Yes,No,69,Yes,Yes,Fiber optic,Yes,No,No,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic),117.26,8090.94
+CUST00004,Male,0,No,No,59,Yes,No,DSL,No,No,Yes,No,Yes,Yes,Two year,Yes,Mailed check,64.71,3817.89
+CUST00005,Female,0,No,Yes,30,Yes,Yes,Fiber optic,No,No,Yes,Yes,No,Yes,Two year,No,Credit card (automatic),107.16,3214.8
+CUST00006,Female,0,No,Yes,32,Yes,No,Fiber optic,No,No,Yes,Yes,No,Yes,Month-to-month,Yes,Mailed check,81.31,2601.92
+CUST00007,Female,0,No,No,60,Yes,No,DSL,Yes,No,No,Yes,No,No,Month-to-month,No,Electronic check,114.11,6846.6
+CUST00008,Female,0,Yes,No,65,Yes,Yes,DSL,No,Yes,Yes,No,No,Yes,Month-to-month,No,Bank transfer (automatic),42.31,2750.15
+CUST00009,Male,0,Yes,No,9,Yes,Yes,DSL,No,Yes,No,No,Yes,Yes,Two year,No,Credit card (automatic),118.26,1064.34
+CUST00010,Female,1,No,Yes,32,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check,25.02,800.64
