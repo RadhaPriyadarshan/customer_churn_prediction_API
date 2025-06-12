@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,render_template
 from flask_cors import CORS
 import torch
 import torch.nn as nn
@@ -62,7 +62,7 @@ def cleanup():
 # ========== Routes ==========
 @app.route("/", methods=["GET"])
 def home():
-    return "✅ Churn Prediction API is running!"
+    return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
 def predict():
